@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Lesotho Farmers Hub - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: calibri, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.0em;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        header .slogan {
+            margin: 5px 0 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            font-size: 1.5em;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: white;
+            color: green;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQ23SenALjZHobOdAHrY9SAW_7KISjFzH5w&s') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            color: black;
+        }
+        
+        .hero-text .slogan {
+            color: black;
+            font-style: italic;
+            max-width: 700px;
+            font-size: 45px;
+        }
+        
+        .hero-text h2 {
+            font-size: 1.5em;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .categories {
+            padding: 40px 20px;
+            text-align: center;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQ23SenALjZHobOdAHrY9SAW_7KISjFzH5w&s') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+
+        .categories h2 {
+            margin-bottom: 20px;
+            color: black;
+            font-size: 2em;
+        }
+
+        .category-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.2s;
+            color: black;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: green;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .footer {
+            background: green;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            color: black;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            color: lightgray;
+        }
+
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 1.5em;
+            }
+            .category-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lesotho Farmers Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p class="slogan">Every crop counts, Every farmer matters.</p>
+            <h2>Connecting Farmers And Buyers in Lesotho</h2>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Farmer Categories</h2>
+        <div class="category-cards">
+            <div class="card">
+                <h3>Crop Farmers</h3>
+                <p>Maize<br>sorghum<br>beans<br>vegetables</p>
+            </div>
+            <div class="card">
+                <h3>Livestock Farmers</h3>
+                <p>Cattle<br>sheep<br>goats<br>pigs<br>poultry</p>
+            </div>
+            <div class="card">
+                <h3>Dairy Farmers</h3>
+                <p>Milk<br>cheese<br>cream<br>custard<br>Butter<br>Buttermilk</p>
+            </div>
+            <div class="card">
+                <h3>Fruit Farmers</h3>
+                <p>Peaches,<br>Apples,<br>Grapes,<br>Berries</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+                    <p>&copy; 2025 Lesotho Farmers Hub. All rights reserved.</p>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - Lesotho Farmers Hub</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: calibri, sans-serif;
+			background: green;
+		}
+		header {
+			background-color: green;
+			padding: 15px;
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+		header h1 {
+			margin: 0;
+			color: white;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 15px;
+		}
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		.contact {
+			display: flex;
+			justify-content: space-between;
+			padding: 40px;
+			background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-64LRh_Oe1t8Jg6PrZ2zcQJCJQgQ0AkTxQ&s.jpeg') no-repeat center center/cover;
+			color: black;
+			gap: 30px;
+		}
+		.left-column-container {
+			flex: 2;
+			max-width: 60%;
+		}
+		.right-column-container {
+			flex: 1;
+			background: rgba(255, 255, 255, 0.85);
+			padding: 20px;
+			border-radius: 10px;
+			align-self: flex-start;
+		}
+		.contact h2 {
+			font-size: 30px;
+			margin-bottom: 20px;
+			background: rgba(255, 255, 255, 0.7);
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 8px;
+		}
+		.info {
+			margin-bottom: 30px;
+			background: rgba(255, 255, 255, 0.85);
+			padding: 15px;
+			border-radius: 10px;
+			max-width: 600px;
+		}
+		.contact p {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		.form-container {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 20px;
+			border-radius: 10px;
+			margin-top: 20px;
+		}
+		form label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+		form input, form textarea {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #cc;
+			font-size: 16px;
+			height: 40px;
+		}
+		form textarea {
+			height: auto;
+		}
+		form button {
+			background: green;
+			color: white;
+			font-weight: bold;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 55px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+		form button:hover {
+			background: darkgreen;
+		}
+		.map-container {
+			width: 300px;
+			height: 150px;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin-top: 15px;
+		}
+		.map-container iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+		.hours {
+			max-width: 300px;
+		}
+		.hours ul {
+			list-style: none;
+			padding: 0;
+		}
+		.hours li {
+			margin-bottom: 5px;
+		}
+		.faq h3, .cta h3 {
+			border-bottom: 2px solid green;
+			padding-bottom: 5px;
+		}
+		.faq ul, .cta ul {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+		.footer {
+			color: white;
+			text-align: center;
+			padding: 20px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		.social-media {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 10px;
+}
+		.social-media a {
+			color: white;
+			margin: 0 15px;
+			font-size: 24px;
+			text-decoration: none;
+		}
+		.social-media a:hover {
+			color: lightgray;
+		}
+		.footer p {
+    text-align: center;
+    width: 100%;
+}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>Lesotho Farmers Hub</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="business.html">Business</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="tips.html">Tips</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="contact">
+		<div class="left-column-container">
+			<h2>Contact Us</h2>
+			<p>We'd love to hear from you! Whether you have a question, a suggestion, or a business inquiry, please feel free to reach out. Your feedback helps us grow and better serve the farming community.</p>
+			
+			<h3>Our Office Location</h3>
+			<div class="map-container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110906.52494519962!2d27.42060136611388!3d-29.35824962295627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebf672152667353%3A0xc3c942921508a8a4!2sMaseru%2C%20Lesotho!5e0!3m2!1sen!2sza!4v1714481488802!5m2!1sen!2sza"
+					width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+
+			<div class="info">
+				<p><strong>Phone:</strong> +266 56677548</p>
+				<p><strong>Email:</strong> lesothofarmershub25.com</p>
+				<p><strong>Address:</strong> Maseru, Main North</p>
+			</div>
+			
+			<div class="info hours">
+				<p><strong>Operating Hours:</strong></p>
+				<ul>
+					<li>Monday - Friday: 8:00 AM - 5:00 PM</li>
+					<li>Saturday: 9:00 AM - 1:00 PM</li>
+					<li>Sunday: Closed</li>
+				</ul>
+			</div>
+
+			<div class="form-container">
+				<form>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+					<label for="surname">Surname</label>
+					<input type="text" id="surname" name="surname" required>
+					<label for="phone">Phone Number (Optional)</label>
+					<input type="text" id="phone" name="phone">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="3" required></textarea>
+					<button type="submit">Enter</button>
+				</form>
+			</div>
+		</div>
+		
+		<div class="right-column-container">
+			<div class="faq">
+				<h3>FAQ or Quick Links</h3>
+				<p>Instead of contacting for small questions, find quick answers here:</p>
+				<ul>
+					<li>How do I buy crops from you?</li>
+					<li>Can farmers join your hub?</li>
+					<li>Do you deliver produce?</li>
+				</ul>
+			</div>
+			<div class="cta">
+				<h3>Call-to-Action</h3>
+				<p>Ready to connect? We're here to help.</p>
+				<ul>
+					<li>Looking for fresh, organic produce?  Call us today!</li>
+					<li>Farmers, join our hub and grow your network today!</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="social-media">
+			<a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+			<a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+			<a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+		</div>
+		<p>© 2025 Lesotho Farmers Hub. All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

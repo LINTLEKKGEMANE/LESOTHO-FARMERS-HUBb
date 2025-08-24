@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Business - Lesotho Farmers Hub</title>
+    <style>
+        /* Universal box-sizing rule for cleaner layout */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: calibri, sans-serif;
+            background: url('https://images.unsplash.com/photo-1579603837943-f112a8759533?q=80&w=1740&auto=format&fit=crop') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: black;
+        }
+        
+        header {
+            background-color: green;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 10px;
+            margin-left: 32px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            font-size: 22px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background: white;
+            color: green;
+            border-radius: 5px;
+        }
+        
+        .business {
+            padding: 30px;
+            min-height: 80vh;
+            text-align: center;
+        }
+        
+        .business h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 2.5em;
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .products-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            margin-top: 20px;
+        }
+        
+        .products-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .products-card h3 {
+            margin: 5px 0;
+            font-weight: bold;
+            color: green;
+        }
+        
+        .farmers-container {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 50px; 
+        }
+        
+        .card h3 {
+            color: black;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            display: flex; 
+            align-items: center;
+            justify-content: space-between; 
+        }
+        
+        .more-btn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 5px;
+            vertical-align: middle;
+        }
+        
+        .more-btn:hover {
+            background-color: darkgreen;
+        }
+        
+        /* New class to hide elements with JavaScript */
+        .hidden {
+            display: none;
+        }
+        
+        .footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .social-media a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        
+        .social-media a:hover {
+            color: lightgray;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+                margin-left: 0;
+            }
+            nav ul {
+                gap: 10px;
+            }
+            nav ul li a {
+                font-size: 18px;
+            }
+            .card h3 {
+                font-size: 2em;
+            }
+        }
+
+        /* Style for the button container */
+        .toggle-btn-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lesotho Farmers Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Business.html">Business</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="business">
+        <h2>Our Products</h2>
+    
+        <div class="farmers-container">
+            <div>
+                <div class="card" id="crop-farmers-section">
+                    <h3>Crop Farmers</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQAdQrwMC4dLakvJQWeBoYDH5nNnCXcZNFNQ&s.jpeg" alt="Maize">
+                        <h3>Maize</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p data-product-price="M100">M100 per bag</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQXd75VxL1f_if0Nl6amRAnvlU-Vtsvep_9A&s.jpeg" alt="Pumpkins">
+                        <h3>Pumpkins</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M50 per Pumpkin</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI0J5B-fT9aFsqnWKB_2M1QRcppJ6W3Jmi9g&s.jpeg" alt="Onions">
+                        <h3>Onions</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M30 per bag</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvusKx5iOe-UtKHUBBqKmGgrW196Xfw0NC4w&s.jpeg" alt="Tomatoes">
+                        <h3>Tomatoes</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M25 per box</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFuHgAhIxel9fy-QWsGvGjMj6m5Too-_7vg&s.jpeg" alt="Cabbage">
+                        <h3>Cabbage</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M15 each head</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAG-l07QJbrlaCJTuDfdEP3lVqqhVHAxDYwA&s.jpeg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M30 per kg</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="card" id="livestock-farmers-section">
+                    <h3>Livestock Farmers</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MhXsocx8m3_rTWB84FYSPh4_Dq8iDgebyw&s" alt="Cattle">
+                        <h3>Cattle</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M6500 </p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwl0Vaj_RCQ0MAddkNsbWqbqsVm7PPnKOHw&s" alt="Sheep">
+                        <h3>Sheep</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M1200</p>
+                    </div>
+    
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJQOVQUyo5xAfdcbMlImPpzdByFUkvC8su0Q&s" alt="Rabbits">
+                        <h3>Rabbits</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M250</p>
+                    </div>
+    
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaADrutV16xxApL7JRnxdDEbH_J5QS4aXpgQ&s" alt="Poultry">
+                        <h3>Poultry</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M150</p>
+                    </div>
+    
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWJbX-0Qur7ZUmdX90r8quIda8NcQYTXekA&s" alt="Goat">
+                        <h3>Goat</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M1500</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlScMFENmg8dcNtXnQiMlFCTm0CPfzjrbQhA&s" alt="Pigs">
+                        <h3>Pigs</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M3500</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="card" id="dairy-farmers-section">
+                    <h3>Dairy Farmers</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI6eWsdmBgWTTR05s1Z1hQt6iCKvWnV-IVuQ&s">
+                        <h3>Cream</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M50 litre</p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ddZlwE-5KomDu45BbRSheeFcNP_GqdWisQ&s" alt="Custard">
+                        <h3>Custard</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M100 litre </p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cCyaPmIxFf0Lix_zi4Hja9N0Oimtc5QIYw&s" alt="Cheese">
+                        <h3>Cheese</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M50 </p>
+                    </div>
+                    <div class="products-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVTpG0zaV-rtmtY7peS-nrCIRpQD-ffjzRfQ&s" alt="Milk">
+                        <h3>Milk</h3>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <p>M15 litre</p>
+                    </div>
+                    
+                    <div class="toggle-btn-container">
+                        <button id="toggleButton" class="more-btn" onclick="toggleFruits()">more...</button>
+                    </div>
+
+                    <div id="fruit-farmers" class="hidden">
+                        <div class="card">
+                            <h3>Fruit Farmers</h3>
+                        </div>
+                        <div class="product-grid">
+                            <div class="products-card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzLXlGGgfIRo8SeiImiFbfjGKYgVe7hjsRQ&s" alt="Peaches">
+                                <h3>Peaches</h3>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <p>M10 each</p>
+                            </div>
+                            <div class="products-card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9TEidg9H12W_Pgo0xVJsGpH27MXy8ZtNfA&s" alt="Apples">
+                                <h3>Apples</h3>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <p>M5 each</p>
+                            </div>
+                            <div class="products-card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm4J8MV0SBOl3rL2NipuyrrUs6OPe2W_yGCA&s" alt="Grapes">
+                                <h3>Grapes</h3>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <p>M30 per bunch</p>
+                            </div>
+                            <div class="products-card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1bOC_XyC2_OtzrLQgvrzkneKyW5tQHZ8QkA&s" alt="Berries">
+                                <h3>Berries</h3>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                                <p>M40 per punnet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Lesotho Farmers Hub. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleFruits() {
+            const fruitSection = document.getElementById('fruit-farmers');
+            const moreButton = document.getElementById('toggleButton');
+    
+            if (fruitSection.classList.contains('hidden')) {
+                fruitSection.classList.remove('hidden');
+                moreButton.textContent = 'less...';
+            } else {
+                fruitSection.classList.add('hidden');
+                moreButton.textContent = 'more...';
+            }
+        }
+    </script>
+</body>
+</html>

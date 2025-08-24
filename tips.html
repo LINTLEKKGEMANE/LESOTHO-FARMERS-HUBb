@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+content="width=device-width,
+initial-scale-1.0">
+    <title> Farming Tips - Lesotho Farmers Hub</title>
+    <style>
+    	body{
+    		margin: 0;
+    		font-family: calibri, sans-serif;
+    		background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8fEqPPMrVvxllApp0cTk6qrUDwLwFg7bnw&s.jpeg') 
+    		no-repeat center center/cover;\
+    		background-attachment: fixed;
+    	}
+    	header{
+    		background-color: green;
+    		padding: 15px;
+    		display: flex;
+    		justify-content: space-between;
+    		align-content: center;
+    	}
+    	header h1{
+    		margin: 0;
+    		color: white;
+            justify-content: center;
+            margin-left: 30px;
+
+        }
+    	nav ul{
+    		list-style: none;
+    		margin: 20;
+    		padding: 0;
+    		display: flex;
+    		gap: 15px;
+    	}
+    	nav ul li a{
+    		text-decoration: none;
+            margin-left: 12px;
+    		color: white;
+    		font-size: 22px;
+    		font-weight: bold;
+    	}
+    	.tips{
+    		padding: 30px;
+    		background: url('deee.jpeg') 
+    		no-repeat center center/cover;
+    		border-radius: 12px;
+    		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    		margin: 40px auto;
+    		max-width: 800px;
+    		font-family: calibri, sans-serif;
+    		min-height: 80vh;
+    		color: black;
+    		text-align: left;
+    	}
+    	.tips h2{
+    		text-align: left;
+    		font-size: 28px;
+    		margin-bottom: 20px;
+    		background: rgba(255,255,255,0.7);
+    		display: inline-block;
+    		padding:10px 20px;
+    		border-radius: 8px;
+    		color: #2e7d32;
+
+
+    	}
+    	.tip-box{
+    		max-width: 700px;
+    		margin: 20px;
+    		margin-bottom: 20px;
+    		margin-left: -70;
+    		background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpNU4uCLyrkZ0dz5qCWAdMDrgw3CEQaDScw&s')no-repeat center center/cover;
+    		padding: 20px;
+    		border-radius: 10px;
+    		
+    	}
+    	
+    	.tip-box ul li{
+    		background: transparent;
+    		padding: 12px 18px;
+    		
+    		border-radius: 6px;
+            flex-grow: 1;
+            text-align: center;
+    		margin: 12px;
+    		font-size: 18px;
+    	}
+    	.tips-categories{
+    		padding: 40px;
+    		font-family: Calibri, sans-serif;
+    	}
+    	.tips-categories h2{
+    		text-align: center;
+    		margin-bottom: 30px;
+    		color: #654321;
+    	}
+    	.grid{
+    		display: grid;
+    		grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    		gap:20px;
+    	}
+    	.card{
+    		background: #f9f9f9;
+    		border: 2px solid #8B4513;
+    		border-radius: 10px;
+    		padding: 20px;
+    		text-align: center;
+    		font-size: 16px;
+    		font-weight: bold;
+    		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    		transition: transform 0.3s, background 0.3s;
+    	}
+    	.card:hover{
+    		background: #DEB887;
+    		transform: transformY(-5px);
+    	}
+    	
+
+        .tips-content {
+            display: none; 
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            text-align: left; 
+}
+
+
+.tips-content ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+.tips-content ul li {
+    background: transparent; 
+    color: black; 
+    font-weight: normal; 
+    padding: 5px 0;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #2e7d32; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background-color: #1b5e20; 
+}
+ .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: lightgray;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="search-container">
+    <form action="/search" method="get">
+        <input type="text" placeholder="Search..." name="q">
+        <button type="submit">Search</button>
+    </form>
+</div>
+	<header>
+		<h1>Lesotho Farmers Hub</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="business.html">Business</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="tips.html">Tips</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="tips">
+		<h2>Helpful Tips for Farmers and Buyers</h2>
+         <p>Welcome to our tips section! Here, you'll find essential advice and practical knowledge to help you improve your farming practices and grow a more successful agricultural business.</p>
+		<div class="grid">
+        <div class="card" onclick="toggleTips(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOxkqhkK5qjVBKQKO9Z4JlFrJnEVca1-sYw&s" alt="crops" class="card-icon">
+            Crop Farming Tips
+            <div class="tips-content">
+                <ul>
+                    <li>Rotate crops to improve soil fertility and reduce pests.</li>
+                    <li>Use organic compost to boost plant health naturally.</li>
+                    <li>Collect rainwater for irrigation during dry seasons.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" onclick="toggleTips(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbXQ1vdM3WPp_Dg7Rv7G406kRb4LrTHRtcdw&s" alt="Livestock" class="card-icon">
+            Livestock Farming Tips
+            <div class="tips-content">
+                <ul>
+                    <li>Ensure proper vaccination schedules to prevent diseases.</li>
+                    <li>Provide adequate and clean water sources.</li>
+                    <li>Maintain a balanced diet for your animals.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" onclick="toggleTips(this)">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF1li92kPJsqLHtxjr6PImTtREVQtnN9GVEA&s" alt="sustainable farming" class="card-icon">
+            Sustainable Farming Tips
+            <div class="tips-content">
+                <ul>
+                    <li>Practice companion planting to deter pests.</li>
+                    <li>Implement no-till farming to preserve soil structure.</li>
+                    <li>Use natural pest control methods.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" onclick="toggleTips(this)">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeWqC4lsu4TdKZ6_WyL3jYWhiM89WKVE5iIQ&s" alt="business and marketing" class="card-icon">
+            Business and Marketing Tips
+            <div class="tips-content">
+                <ul>
+                    <li>Keep records of sales and expenses.</li>
+                    <li>Promote your products on digital platforms for more buyers.</li>
+                    <li>Network with other farmers to share knowledge and resources.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" onclick="toggleTips(this)">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJHeBCiD9GK-V3NC9EvEBTMp4eMYsNGVFWg&s" alt="Community and Cooperative" class="card-icon">
+            Community and Cooperative Tips
+            <div class="tips-content">
+                <ul>
+                    <li>Join local farmer's associations or cooperatives.</li>
+                    <li>Share resources and knowledge with neighbors.</li>
+                    <li>Participate in community farming projects.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" onclick="toggleTips(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrl40KLEE2o5n-pUMxirYSeDvsptFMHTBUdA&s" alt="Farm Management" class="card-icon">
+            Farm Management Tips
+            <div class="tips-content">
+                <ul>
+                    <li>Create a seasonal planting and harvesting calendar.</li>
+                    <li>Inspect your farm regularly for issues.</li>
+                    <li>Invest in modern tools to increase productivity.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+		<div class="tip-box">
+			<ul>
+				<li>Rotate crops to improve soil fertility and reduce pests.</li>
+				<li>Use organic compost to boost plant health naturally.</li>
+				<li>Collect rainwater for irrigation during dry seasons.</li>
+				<li>Keep records of sales and expenses for better business management.</li>
+				<li>Use morden tools and farming methods to increase productivity.</li>
+				<li>Network with other farmers to share knowledge and resources.</li>
+				<li>Promote your products on digital platforms for more buyers.</li>
+			</ul>
+		</div>
+
+	</section>
+    <script>
+    function toggleTips(card) {
+        const tipsContent = card.querySelector('.tips-content');
+        if (tipsContent.style.display === "block") {
+            tipsContent.style.display = "none";
+        } else {
+            tipsContent.style.display = "block";
+        }
+    }
+</script>
+
+<footer>
+    <div class="social-media">
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2024 Lesotho Farmers Hub. All Rights Reserved.</p>
+</footer>
+       
+
+</body>
+</html>
